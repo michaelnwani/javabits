@@ -1,33 +1,7 @@
-#Untracked files:
-	1Kints.txt	
-	abra.txt	
-	ex3.txt		
-	m1.txt		
-	out.txt		
-	tinyST.txt	
-	tobe.txt
-	1Mints.txt	
-	brownian.txt	
-	ex4.txt		
-	m2.txt		
-	tale.txt	
-	tinyT.txt	
-	words3.txt
-	2Kints.txt	
-	diffusion.txt	
-	in1.txt		
-	m3.txt		
-	tiny.txt	
-	tinyTale.txt
-	4Kints.txt	
-	ex1.txt		
-	in2.txt		
-	mediumUF.txt	
-	tinyBatch.txt	
-	tinyUF.txt
-	8Kints.txt	
-	ex2.txt		
-	list.txt	
-	movies.txt	
-	tinyPQ.txt	
-	tinyW.txt
+#Apple junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Some extensions
+*.txt
+*.csv
