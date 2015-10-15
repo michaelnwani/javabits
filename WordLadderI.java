@@ -43,7 +43,7 @@ public class WordLadderI{
 						
 						// WordNode newTop = new WordNode(tempString, top.steps+1);
 						// characters = newTop.word.toCharArray();
-						// System.out.println(tempString + ", newTop.steps = "+(newTop.steps));
+						System.out.println(tempString);
 						linkedList.add(new WordNode(tempString, top.steps+1));
 						// if (tempString.equals(endWord)){
 // 							return newTop.steps;
@@ -62,11 +62,11 @@ public class WordLadderI{
 	
 	public static void main(String[] args){
 		Set<String> wordDict = new HashSet<String>();
-		// wordDict.add("hot");
-// 		wordDict.add("dot");
-// 		wordDict.add("dog");
-// 		wordDict.add("lot");
-// 		wordDict.add("log");
+		wordDict.add("hot");
+		wordDict.add("dot");
+		wordDict.add("dog");
+		wordDict.add("lot");
+		wordDict.add("log");
 		// hit to cog
 
 // wordDict.add("a");
@@ -92,10 +92,10 @@ public class WordLadderI{
 // wordDict.add("peach");
 //teach to place
 
-wordDict.add("hot");
-wordDict.add("dog");
-wordDict.add("dot");
+// wordDict.add("hot");
+// wordDict.add("dog");
+// wordDict.add("dot");
 //hot to dog
-		System.out.println(ladderLength("hot","dog",wordDict));
+		System.out.println(ladderLength("hit","cog",wordDict));
 	}
 }
