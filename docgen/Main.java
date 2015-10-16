@@ -3,6 +3,8 @@ package docgen;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 public class Main{
+	
+	
 	public static void main(String[] args){
 		// Get a class object
 		Class<?> clazz = String.class;

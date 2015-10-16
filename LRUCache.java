@@ -2,11 +2,11 @@
 //
 // get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
 // set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
-import java.util.*;
+import java.util.LinkedHashMap;
 public class LRUCache {
 
     // private static ArrayDeque<Integer> deque;
-   // private static int size;
+//    	private static int size;
     private static LinkedHashMap<Integer,Integer> map;
 
     
@@ -15,20 +15,22 @@ public class LRUCache {
         //this.size = 0;
         // this.deque = new ArrayDeque<Integer>();
 		//true - access ordering
-        this.map = new LinkedHashMap<Integer,Integer>(capacity, 1.1f, true){
-			@Override
-			protected boolean removeEldestEntry(Map.Entry<Integer,Integer> eldest){
-				return size() > capacity;
-			}
+        this.map = new LinkedHashMap<Integer,Integer>(capacity, 1.1f, true) {
+		  @Override
+		  protected boolean removeEldestEntry(Map.Entry<Integer,Integer> eldest) {
+		    return size() > capacity;
+		  }
         };
 
     }
     
     public int get(int key) {
-		if (map.get(key) == null)
-			return -1;
-		else
-			return map.get(key);
+	  if (map.get(key) == null) {
+	    return -1;
+	  } else {
+	  	  return map.get(key);
+	  }
+				
     }
 	
 	
