@@ -1,6 +1,6 @@
 package main.java.threading;
 import java.util.Scanner;
-//Notify and wait
+// Notify() and wait()
 public class Processor {
 	
 	public void produce() throws InterruptedException {
