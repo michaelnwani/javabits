@@ -1,0 +1,1 @@
+## Define an algorithm in an abstract class that contains both abstract and concrete methods. Subclasses of that class can override those methods that don't make sense for them to use in the default way
