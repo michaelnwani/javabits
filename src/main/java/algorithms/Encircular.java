@@ -1,14 +1,7 @@
 package main.java.algorithms;
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class Encircular {
-
-	// My solution was something like this, except using a switch-case statement,
-	// and direction="N","E","S","W"
+	
 	static String doesCircleExist(String commands) {
 
 		int x1 = 0;
@@ -80,4 +73,4 @@ public class Encircular {
 		}
 	}
 	
-	
+}	
