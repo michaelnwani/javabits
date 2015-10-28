@@ -8,3 +8,5 @@
 *.log
 *.class
 *.txt.swp
+*.bin
+*.ser
