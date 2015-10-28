@@ -1,1 +1,1 @@
-# java bits I've done lately
+## dropwizard, data structures, design patterns, algorithms, multithreading, serialization
