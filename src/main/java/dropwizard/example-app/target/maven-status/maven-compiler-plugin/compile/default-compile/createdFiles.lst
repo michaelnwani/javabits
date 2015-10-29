@@ -1,0 +1,5 @@
+com/michaelnwani/helloworld/HelloWorldConfiguration.class
+com/michaelnwani/helloworld/core/Saying.class
+com/michaelnwani/helloworld/resources/HelloWorldResource.class
+com/michaelnwani/helloworld/health/TemplateHealthCheck.class
+com/michaelnwani/helloworld/HelloWorldApplication.class
