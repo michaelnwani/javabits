@@ -21,7 +21,7 @@ public class StockObserver implements Observer {
 		System.out.println("New Observer " + this.observerID);
 		
 		stockGrabber.register(this);
-;	}
+	}
 	
 	@Override
 	public void update(double ibmPrice, double aaplPrice, double googPrice) {
