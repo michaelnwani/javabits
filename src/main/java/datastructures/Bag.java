@@ -1,17 +1,14 @@
-package main.java.datastructures;
+// package main.java.datastructures;
 import java.util.Iterator;
 
-public class Bag<Item> implements Iterable<Item>
-{
+public class Bag<Item> implements Iterable<Item> {
 	private Node first; //first node in list
-	private class Node
-	{
+	private class Node {
 		Item item;
 		Node next;
 	}
 	
-	public void add(Item item)
-	{
+	public void add(Item item) {
 		//same as push() in stack
 		Node oldfirst = first;
 		first = new Node();
@@ -19,13 +16,11 @@ public class Bag<Item> implements Iterable<Item>
 		first.next = oldfirst;
 		
 	}
-	public Iterator<Item> iterator()
-	{
+	public Iterator<Item> iterator() {
 		return new ListIterator();
 	}
 	
-	private class ListIterator implements Iterator<Item>
-	{
+	private class ListIterator implements Iterator<Item> {
 		private Node current = first;
 		
 		public boolean hasNext()
