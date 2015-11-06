@@ -1,4 +1,4 @@
-package main.java.datastructures;
+// package main.java.datastructures;
 import java.util.Iterator;
 public class Stack<Item> implements Iterable<Item>
 {

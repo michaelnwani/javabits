@@ -1,5 +1,6 @@
-package main.java.datastructures;
-public class Queue<Item>
+// package main.java.datastructures;
+import java.util.Iterator;
+public class Queue<Item> implements Iterable<Item>
 {
 	private Node first; //link to least recently added node
 	private Node last;	//link to most recently added node
@@ -37,6 +38,22 @@ public class Queue<Item>
 	}
 	
 	//See page 155 for iterator() implementation
+
+	public Iterator<Item> iterator()
+	{
+		return new QueueIterator();
+	}
+	
+	private class QueueIterator implements Iterator<Item>
+	{
+		private Node current = first;
+		
+		private int i = N;
+		public boolean hasNext() 	{ return current != null; }
+		public Item next() 			{ Item item = current.item; current = current.next; return item; }
+		public void remove() 		{ 				}
+	}
+
 	public static void main(String[] args)
 	{
 		Queue<String> q = new Queue<String>();
